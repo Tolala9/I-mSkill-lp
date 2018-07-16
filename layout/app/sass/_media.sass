@@ -5,15 +5,83 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	.site-header
+		&__menu-content
+			nav.primary-nav
+				ul
+					li
+						padding-right: 10px
+
+	.head-picture
+		&__content
+			margin-top: 35px
 
 // ≥992px
 +media-breakpoint-down(md)
+	.head-picture
+		&__content
+			margin-left: 30px
+		&__text-content
+			font-size: 30px
+			line-height: 41px
+			padding: 10px 0px 
+			p
+				font-size: 24px
+				line-height: 31px
+			span
+				font-size: 30px
+				color: $blue
+				font-weight: 700
+			.btn
+				padding: .75rem 1.2rem
+				margin-top: 10px
+				font-size: 21px
+				line-height: 29px
+
+	
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.head-picture
+		&__content
+			// margin-left: 100px
+		&__text-content
+			font-size: 30px
+			line-height: 45px
+			padding: 10px 0px 
+			p
+				font-size: 24px
+				line-height: 35px
+			span
+				font-size: 30px
+				color: $blue
+				font-weight: 700
+			.btn
+				padding: .75rem 1.2rem
+				margin-top: 20px
+				font-size: 22px
+				line-height: 29px
 
 // ≥576px
 +media-breakpoint-down(xs)
+	.site-header
+		&__menu-content
+			.social-info
+				ul
+					margin-left: 60px
+
+	.head-picture
+		&__content
+			margin-left: 0px
+
+			
+
+
+
+					
+
+
+
 
 
 /*==========  Mobile First  ==========*/
@@ -26,6 +94,16 @@
 
 // ≤992px
 +media-breakpoint-up(lg)
+	
 
 // ≤1200px
 +media-breakpoint-up(xl)
+	.head-picture
+		&__text-content
+			line-height: 55px
+			padding: 60px 0px 
+		p
+			line-height: 45px
+
+
+

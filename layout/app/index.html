@@ -21,6 +21,11 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
+	
+
+
+	
+
 
 	
 	<!-- Custom Browsers Color Start -->
@@ -38,13 +43,13 @@
 		<div class="container">
 			<div class="row">
 
-				<div class="col-md-3">
+				<div class=" col-3 col-lg-2">
 					<div class="site-header__logo">
 						I’mSkill
 					</div>
 				</div>
 				
-				<div class="col-md-9">
+				<div class="col-lg-6 d-none d-lg-block">
 					<div class="site-header__menu-content">
 
 						<nav class="primary-nav">
@@ -56,76 +61,97 @@
 							</ul>
 						</nav>
 
-						<div class="social-info">
+
+					</div>
+				</div>
+
+				<div class="col-9 col-lg-4 ">
+					<div class="site-header__menu-content">
+						<div class="social-info ">
 							<ul>
 								<li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
 								<li><a href="#"><i class="fas fa-phone-square"></i>063-123-45-67</a></li>
 							</ul>
 						</div>
-
 					</div>
 				</div>
-
 
 			</div>
 		</div>
 	</header>
 
+
 	<div class="head-picture">
-		<img class="head-picture__image" src="img/head-bg.jpg" alt="Титульний фон">
 
-		<div class="head-picture__content">
-			<div class="container">
+		<picture>
+			<source srcset="img/head-bg.jpg" media="(min-width: 780px)">
+				<source srcset="img/head-bg_small.jpg" media="(min-width: 640px)">
+				<source srcset="img/head-bg_smaller.jpg" media="(min-width: 370px)">
+				<img class="head-picture__image" src="img/head-bg_more-smaller.jpg" alt="Титульний фон">
+			</picture>
+
+			<div class="head-picture__content">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-8 offset-sm-4 col-md-8 offset-md-0 col-xl-10">
+
+							<div class="head-picture__text-content">
+								<span>Online</span> курс <br>
+								<strong>Графічний Дизайн.</strong> <br>
+								<p>Програма створена  під потреби роботодавців</p>
+								<p><a href="#" class="btn"><strong>Зареєструватись</strong> на <br>
+								пробне заняття</a></p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<section class="section section__grey section-about">
+
+			<div class="section-line__right section-line__light"></div>
+
+			<div class="container ">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-md-12">
 
-						<div class="head-picture__text-content">
-							<span>Online</span> курс <br>
-							<strong>Графічний Дизайн.</strong> <br>
-							<p>Програма створена під потреби роботодавців</p>
-							<p><a href="#" class="btn"><strong>Зарейструватись</strong> на <br>
-							пробне заняття</a></p>
+						<h2 class="section-title">Про Компанію</h2>
+
+						<div class="row justify-content-between">
+							<div class="col-md-5">
+								<p>Ми - активна команда, яка допоможе вам реалізуватись в улюбленій професії. <br>
+									Маємо домовленості з іт компаніями по всій Україні. <br>
+									Контракти з кадровими агентствами. <br>
+									Лише топові викладачі. <br>
+								Випускаємо не лише із знаннями, але також із новим робочим місцем в улюбленій сфері.</p>
+							</div>
+
+							<div class="col-md-5">
+								<img class="img-responsive" src="img/about_us.jpg" alt="Про нас">
+							</div>
 						</div>
+
 
 					</div>
 				</div>
 			</div>
-		</div>
-
-	</div>
-
-	<section class="section section__grey section-about">
-		<div class="container ">
-			<div class="row">
-				<div class="col-md-12">
-					
-					<h2 class="section-title">Про Компанію</h2>
-					
-					<div class="row justify-content-between">
-						<div class="col-md-5">
-							<p>Ми - активна команда, яка допоможе вам реалізуватись в улюбленій професії. <br>
-							Маємо домовленості з іт компаніями по всій Україні. <br>
-							Контракти з кадровими агентствами. <br>
-							Лише топові викладачі. <br>
-							Випускаємо не лише із знаннями, але також із новим робочим місцем в улюбленій сфері.</p>
-						</div>
-
-						<div class="col-md-5">
-							<img class="img-responsive" src="img/about_us.jpg" alt="Про нас">
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-		</div>
-	</section>
+		</section>
 
 
 
-	
 
-	<script src="js/scripts.min.js"></script>
 
-</body>
-</html>
+
+
+
+
+		<script src="js/scripts.min.js"></script>
+
+
+	</body>
+	</html>
