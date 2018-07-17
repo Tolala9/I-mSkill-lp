@@ -77,13 +77,15 @@ p
 
 .section-line__right
 	display: block
-	position: relative
 	width: 1px
 	height: 472px
 	float: right
 	margin-right: 70px
 	z-index: 2
 	background-color: $white
+
+
+
 
 
 
@@ -179,12 +181,120 @@ p
 
 /* ===========Start Section About=========== */
 .section-about
+	height: 100%
 	p
 		padding-top: 40px
 /* ===========End Section About=========== */
 
 
+/* =====Source TOGGLE BUTTON===== */	
+$w: 28px
+$h: 3px
 
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 8px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+.sw-topper, .sw-bottom, .sw-footer
+	background-color: $white
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	display: block
+			
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+	display: block
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+	display: block
+.sandwich.active
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+/* =====END Source TOGGLE BUTTON===== */	
+
+/* =====TOGGLE MENU===== */
+.toggle-mnu 
+	background-color: $grey
+	width: 40px
+	height: 40px
+	float: right
+	position: absolute
+	z-index: 100
+	border: none  
+	right: 20px
+	top: 15px
+	&:focus
+		outline: none
+
+/* =====TOGGLE MENU===== */
+.top-mnu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.9)
+	z-index: 50
+	right: 0
+	top: 0
+	display: none
+	ul,li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 100px
+		text-align: center
+		li
+			display: block
+			a
+				color: #fff
+				display: block
+				text-transform: uppercase
+				height: 60px 
+				
+				span
+					display: block
+					position: relative
+					top: -40px
+					left: 0
+					height: 100%
+					transition: ease 0.5s
+					&:hover
+						background-color: rgba(255,255,255,.08)
+/* =====END TOGGLE MENU===== */
 
 
 

@@ -42,9 +42,17 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+	.site-header
+		&__menu-content
+			.social-info
+				ul
+					li
+						padding-right: 20px
+						&:last-child
+							padding-right: 50px
+
 	.head-picture
-		&__content
-			// margin-left: 100px
 		&__text-content
 			font-size: 30px
 			line-height: 45px
@@ -68,7 +76,12 @@
 		&__menu-content
 			.social-info
 				ul
-					margin-left: 60px
+					margin-left: 50px
+					li
+						display: block
+						margin-right: 20px
+						&:last-child
+							padding-right: 0px
 
 	.head-picture
 		&__content
