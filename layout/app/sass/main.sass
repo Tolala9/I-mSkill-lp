@@ -67,13 +67,18 @@ ul
 		text-align: center
 		padding-bottom: 40px
 		padding-top: 40px
+		margin: 0
 p
 	font-size: 18px
 	line-height: 25px
+	margin: 0
 
 .section__grey
 	background-color: $grey
 	color: $whiteText
+.section__white
+	background-color: $white
+	color: $blackText
 
 .section-line__right
 	display: block
@@ -185,6 +190,45 @@ p
 	p
 		padding-top: 40px
 /* ===========End Section About=========== */
+
+/* ===========Start Section Advantages=========== */
+.section-advantages
+	&__block
+		text-align: center
+		&-icon
+			position: relative
+			display: block
+			margin: auto
+			width: 100px
+			height: 100px	
+			background-color: $lightGrey
+			border: $blue solid 2px
+			transition: .3s ease-out
+			&:hover
+				border: $accent solid 2px
+			img
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+		&-title
+			font-size: 22px
+			margin: 15px 0	0px
+		&-description
+			width: 200px
+			margin: auto
+			p
+				font-size: 16px
+				text-align: center
+				line-height: 21px
+				padding-bottom: 20px
+	
+
+
+
+
+
+/* ===========End Section Advantages=========== */
 
 
 
