@@ -41,7 +41,6 @@ body
 .fullwidth
 	margin: 0
 	padding: 0
-	// max-width: 2400px
 
 b, strong
 	font-weight: bold
@@ -58,9 +57,21 @@ ul
 		list-style: none
 		a
 			text-decoration: none
+h3
+	font-family: $default-font
+	font-weight: 400
+	font-style: regular
+	font-size: 22px
+h4
+	font-family: $default-font
+	font-weight: 400
+	font-style: regular
+	font-size: 18px
+	line-height: 24px
 
 .section
 	padding: 0px 0px 50px
+	height: 100%
 	h2.section-title
 		font-size: 25px
 		font-weight: 100
@@ -82,6 +93,10 @@ p
 .section__blue
 	background-color: $blue
 	color: $whiteText
+
+.section__wrapper
+	// height: 100%
+
 
 .section-line__right
 	display: block
@@ -231,6 +246,8 @@ p
 
 /* ===========Start Section Advantages=========== */
 .section-advantages
+	&__wrapper
+		padding-bottom: 30px
 	&__block
 		text-align: center
 		&-icon
@@ -280,6 +297,7 @@ p
 /* ===========Start Section-Consultation_Form========== */
 .section__consultation-free
 	form.consultation-free
+		padding-bottom: 30px
 		input
 			width: 100%
 			height: 50px
@@ -304,6 +322,43 @@ p
 			height: 50px
 /* ===========End Section-Consultation_Form=========== */
 
+/* ===========Start Section Program & Teacher========== */
+.section
+	padding-bottom: 0
+	// height: 100%
+	.section__teacher
+		&-content
+			background: rgba($blue ,0.75)
+			padding-bottom: 50px
+			text-align: center
+			height: 100%
+			.teacher__photo
+				img
+					margin: auto
+					display: block
+					width: 150px
+					height: 150px
+					border-radius: 75px
+					border: $accent 2px solid
+			.teacher__subtitle
+				max-width: 240px
+				display: block
+				margin: auto
+
+	.section__program
+		&-content
+			padding-bottom: 40px
+			h4
+				font-weight: 300
+			ul
+				li
+					display: block
+					font-size: 18px
+					i
+						padding-right: 20px
+
+
+/* ===========End Section Program & Teacher=========== */
 
 
 /* =====================ADDITION================= */
