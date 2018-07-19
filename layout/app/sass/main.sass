@@ -383,6 +383,74 @@ p
 					color: $blue
 /* ===========End Employment========== */
 
+/* ===========Start Cost of education=========== */
+.section-cost
+	&__wrapper
+		padding-bottom: 10px
+	&__block
+		text-align: center
+		max-width: 270px
+		margin: auto
+		&-title
+			font-size: 22px
+			background-color: $blue
+			color: $whiteText
+			padding-top: 10px
+			padding-bottom: 10px
+		&-content
+			border: $blue solid 2px
+			padding: 0px 15px 15px
+
+			&--title
+				color: $blue
+				font-size: 19px
+				margin-top: 15px
+			p
+				font-size: 16px
+				margin-top: 5px
+				line-height: 20px
+				
+			.cost-text
+				display: block
+				text-transform: uppercase
+				font-weight: 300
+				margin-top: 8px
+			.cost-price
+				&--old
+					text-decoration: line-through
+				&--new
+					color: $blue
+					font-weight: 300
+
+			a.btn__register
+				display: block
+				margin-top: 15px
+				background-color: $accent
+				color: $whiteText
+				font-size: 22px
+				padding-top: 5px
+				padding-bottom: 8px 
+				text-decoration: none
+				letter-spacing: 1px
+				transition: .3s ease-out
+				&:hover
+					cursor: pointer
+					background-color: darken($accent, 8%)
+				&:focus 
+					outline: 0
+					background-color: darken($blue, 8%)
+					transition: .1s all
+	&__addition-text
+		text-align: center
+		max-width: 550px
+		display: block
+		margin: auto
+		margin-bottom: 20px
+		p
+			font-size: 16px
+			line-height: 21px
+/* ===========End Cost of education=========== */
+
 
 
 
