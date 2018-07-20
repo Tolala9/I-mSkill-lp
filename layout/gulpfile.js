@@ -36,8 +36,10 @@ gulp.task('styles', function() {
 
 gulp.task('js', function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/jquery/dist/jquery-2.1.3.min.js',
 		'app/libs/pageScrolltoid/PageScroll2id.min.js',
+		'app/libs/waypoints/waypoints.min.js',
+		'app/libs/animate/animate-css.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
