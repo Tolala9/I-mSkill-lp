@@ -22,4 +22,6 @@ $(".top-mnu li a").click(function() {
 }).append("<span>");
 /* END TOGGLE MENU */
 
+$("a[href*='#']").mPageScroll2id(); 
+
 });
