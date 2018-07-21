@@ -40,24 +40,25 @@ $(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
 	});
 	/* END SCROLL-TOP BUTTON*/
-
+ 
 	/* ANIMATION*/ 
 	//set up old Jquery 2.1.3 becouse has problem with 
 	//custom plugin animate where animation work on scroll
 	$(".head-picture__text-content").addClass("animated bounceInLeft");
 	$(".social-info").addClass("animated bounceInDown");
 
-//custom function for animation.css plugin
-$(".section-title").animated("fadeInDown", "fadeOutUp");
-$(".img-responsive").animated("pulse", "fadeOutRight");
-$(".section-advantages__block").animated("bounceIn", "bounceOut");
-$(".submit-button").animated("pulse", "fadeOutRight");
-$(".section__teacher").animated("bounceInLeft", "bounceOutLeft");
-$(".section__program").animated("bounceInRight", "bounceOutRight");
-$(".section__what-gain").animated("bounceInRight", "bounceOutRight");
-$(".section-cost__block").animated("bounceIn", "bounceOut");
-$(".section__main-gerister").animated("bounceInRight", "bounceOutRight");
+//custom function for animation.css plugin (UPD dont work propperly
+//with skroll top button and quick skroll . reauire manage)
+// $(".section-title").animated("fadeInDown", "fadeOutUp");
+// $(".img-responsive").animated("pulse", "fadeOutRight");
+// $(".section-advantages__block").animated("bounceIn", "bounceOut");
+// $(".submit-button").animated("pulse", "fadeOutRight");
+// $(".section__teacher").animated("bounceInLeft", "bounceOutLeft");
+// $(".section__program").animated("bounceInRight", "bounceOutRight");
+// $(".section__what-gain").animated("bounceInRight", "bounceOutRight");
+// $(".section-cost__block").animated("bounceIn", "bounceOut");
+// $(".section__main-gerister").animated("bounceInRight", "bounceOutRight");
 /* END ANIMATION*/
-
+  
 
 });
